@@ -7,6 +7,10 @@ the LLM answers like a person, and the answer is spoken back sentence by sentenc
 mic -> faster-whisper (ears) -> free LLM (brain) -> edge-tts (mouth) -> speaker
         language = your setting   streamed tokens      voice = your language
 ```
+```
+![My Project Screenshot](Images/Screenshot1.png) 
+![My Project Screenshot](Images/Screenshot2.png) 
+```
 
 ## Project layout
 
