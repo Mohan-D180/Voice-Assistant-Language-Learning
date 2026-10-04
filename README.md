@@ -8,8 +8,8 @@ mic -> faster-whisper (ears) -> free LLM (brain) -> edge-tts (mouth) -> speaker
         language = your setting   streamed tokens      voice = your language
 ```
 
-![Voice Companion’s light-gray chat interface invites the user to speak in English. The screen shows “Let’s talk in,” “English,” “English, tap to change,” the Chat and Tutor options, a Hands-free toggle, and “Start over.” A message reads, “Tap the microphone and say hello. Change the language above whenever you like: the ears, the voice and the replies all follow.” Below, “Tap the microphone and start talking.” appears beside a microphone button and a text field containing “Hello world, How are you doing?” with a Send control. The clean, uncluttered layout has an approachable tone.](Images\Screenshot1.png) 
-![Another screenshot of the Voice Companion app interface.](Images\Screenshot2.png) 
+![A light gray voice chat interface fills the screen. The main subject is the language selector and conversation area for a voice assistant. Large text reads Lets talk in and English, with a blue underline and the smaller label English, tap to change. Buttons for Chat and Tutor are shown, a Hands-free toggle is on, and Start over sits on the right. A message bubble contains the user text Hello world, How are you doing?, followed by the assistant reply Hello! I am doing well, thanks for asking. A microphone button sits below with the instruction Tap the microphone and start talking. The overall design is calm, modern, and welcoming.](Images\Screenshot1.png) 
+![A second screen of the same voice chat app, showing the same light gray interface and conversational layout in a slightly different view. The app remains centered on voice input and output, with large text, simple controls, and a clean modern design. The overall mood is calm and approachable.](Images\Screenshot2.png) 
 
 
 ## Project layout
