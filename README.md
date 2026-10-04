@@ -7,10 +7,10 @@ the LLM answers like a person, and the answer is spoken back sentence by sentenc
 mic -> faster-whisper (ears) -> free LLM (brain) -> edge-tts (mouth) -> speaker
         language = your setting   streamed tokens      voice = your language
 ```
-```
+
 ![Voice Companion’s light-gray chat interface invites the user to speak in English. The screen shows “Let’s talk in,” “English,” “English, tap to change,” the Chat and Tutor options, a Hands-free toggle, and “Start over.” A message reads, “Tap the microphone and say hello. Change the language above whenever you like: the ears, the voice and the replies all follow.” Below, “Tap the microphone and start talking.” appears beside a microphone button and a text field containing “Hello world, How are you doing?” with a Send control. The clean, uncluttered layout has an approachable tone.](Images\Screenshot1.png) 
 ![Another screenshot of the Voice Companion app interface.](Images\Screenshot2.png) 
-```
+
 
 ## Project layout
 
