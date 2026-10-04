@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voice companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body data-state="offline">
+  <main class="room">
+    <header class="hero">
+      <p class="lead">Let's talk in</p>
+      <label class="language">
+        <span id="langNative" class="native" dir="auto">English</span>
+        <span id="langName" class="name">English, tap to change</span>
+        <select id="lang" aria-label="Conversation language"></select>
+      </label>
+    </header>
+
+    <div class="options">
+      <fieldset class="segmented">
+        <legend class="sr">Conversation style</legend>
+        <label><input type="radio" name="mode" value="chat" checked><span>Chat</span></label>
+        <label><input type="radio" name="mode" value="tutor"><span>Tutor</span></label>
+      </fieldset>
+      <label class="switch">
+        <input id="handsfree" type="checkbox">
+        <span class="track" aria-hidden="true"></span>
+        <span>Hands-free</span>
+      </label>
+      <button id="clear" class="quiet" type="button">Start over</button>
+    </div>
+
+    <section id="transcript" class="transcript" aria-live="polite" aria-label="Conversation">
+      <p id="empty" class="empty">Tap the microphone and say hello. Change the language above whenever you like: the ears, the voice and the replies all follow.</p>
+    </section>
+
+    <footer class="dock">
+      <canvas id="wave" class="wave" aria-hidden="true"></canvas>
+      <p id="status" class="status" role="status">Connecting…</p>
+      <div class="controls">
+        <button id="mic" class="mic" type="button" aria-label="Start talking">
+          <svg class="icon-mic" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4Zm6-4a1 1 0 1 1 2 0 8 8 0 0 1-7 7.93V21h3a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h3v-2.07A8 8 0 0 1 4 11a1 1 0 1 1 2 0 6 6 0 0 0 12 0Z"/></svg>
+          <svg class="icon-stop" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor"/></svg>
+        </button>
+        <form id="textForm" class="text" autocomplete="off">
+          <input id="textInput" type="text" placeholder="Or type here" aria-label="Type a message">
+          <button type="submit" class="quiet">Send</button>
+        </form>
+      </div>
+    </footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
